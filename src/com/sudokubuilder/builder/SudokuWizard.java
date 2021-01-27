@@ -21,7 +21,9 @@ import com.sudokubuilder.sudoku.Sudoku;
  * 		|------------------------
  * 		v
  * 
- * 
+ * 		build() method fills a Sudoku object given with unique numbers through rows, columns and boxes
+ * 		
+ * 		print() method prints it to the console
  * 
  */
 
@@ -37,6 +39,7 @@ public class SudokuWizard {
 				int randomDigit = random.nextInt(9) + 1;
 				int counter = 0;
 
+				//Checks if the randomized digit is unique or not in the row, column and the box
 				while (isRowContains(randomDigit, sudoku, i) || isColumnContains(randomDigit, sudoku, j)
 						|| isBoxContains(sudoku, randomDigit, i, j)) {
 
@@ -44,7 +47,8 @@ public class SudokuWizard {
 
 					counter++;
 
-					if (counter == 100) {
+					// if cannot pass it in the 20 tries, that means it's a dead end and we break the loop, clean the 3 rowset and GO TO loop1 by reducing the iterator 
+					if (counter == 20) {
 						rowCleaner(sudoku, i);
 						i = (i - (i % 3)) - 1;
 						break loop2;
