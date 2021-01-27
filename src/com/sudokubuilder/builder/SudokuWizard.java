@@ -7,19 +7,19 @@ import com.sudokubuilder.sudoku.Sudoku;
  * 				
  *				  ROW
  * 	    ------------------------->	
- * 	    |		|       |		|
- * 	   C|  BOX  | 		|		|
- * 	   O|		|		|		|
+ * 	    |       |       |       |
+ * 	   C|  BOX  |       |       |
+ * 	   O|       |       |       |
  * 	   L|------------------------
- * 	   U|		|		|		|
- * 	   M|		|		|		|	
- * 	   N|		|		|		|
+ * 	   U|       |       |       |
+ * 	   M|       |       |       |	
+ * 	   N|       |       |       |
  * 	    |------------------------
- * 	    |		|		|		|
- * 	    |		|		|		|		
- * 	    |		|		|		|
+ * 	    |       |       |       |
+ * 	    |       |       |       |		
+ * 	    |       |       |       |
  * 	    |------------------------
- * 		v
+ *      v
  * 
  * 		build() method fills a Sudoku object given with unique numbers through rows, columns and boxes
  * 		
