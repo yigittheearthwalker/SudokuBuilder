@@ -6,8 +6,8 @@ import com.sudokubuilder.sudoku.Sudoku;
 /*
  * 				
  *				  ROW
- * 		------------------------->	
- * 		|		|       |		|
+ * 	    ------------------------->	
+ * 	    |		|       |		|
  * 	   C|  BOX  | 		|		|
  * 	   O|		|		|		|
  * 	   L|------------------------
@@ -15,10 +15,10 @@ import com.sudokubuilder.sudoku.Sudoku;
  * 	   M|		|		|		|	
  * 	   N|		|		|		|
  * 	    |------------------------
- * 		|		|		|		|
- * 		|		|		|		|		
- * 		|		|		|		|
- * 		|------------------------
+ * 	    |		|		|		|
+ * 	    |		|		|		|		
+ * 	    |		|		|		|
+ * 	    |------------------------
  * 		v
  * 
  * 		build() method fills a Sudoku object given with unique numbers through rows, columns and boxes
